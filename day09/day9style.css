@@ -1,0 +1,81 @@
+body {
+  background-color: cadetblue;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  margin: 0px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.domino {
+  width: 10px;
+  height: 50px;
+  margin: 0px;
+  background-color: white;
+  animation: scale_domino 1.2s ease-in-out infinite;
+}
+
+.box-circle {
+  animation: rotate_circle 1.2s ease-in-out infinite;
+}
+
+.domino:first-child {
+  animation-delay: 0ms;
+}
+.domino:nth-child(2) {
+  animation-delay: 100ms;
+}
+.domino:nth-child(3) {
+  animation-delay: 200ms;
+}
+.domino:nth-child(4) {
+  animation-delay: 300ms;
+}
+.domino:last-child {
+  animation-delay: 400ms;
+}
+
+@keyframes rotate_circle {
+  from {
+    transform: rotateZ(0deg);
+  }
+  80% {
+    transform: rotateZ(180deg);
+  }
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes scale_domino {
+  from {
+    transform: scaleY(1);
+  }
+  30% {
+    transform: scaleY(1.5);
+  }
+  60% {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}

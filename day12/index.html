@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>You Are Awesome!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-screen left-side">
+      <header class="top-menu">
+        <div class="top-menu-left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="top-menu-right">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </header>
+      <main>
+        <div class="musician-info">
+          <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ARTIST/080/214/061/80214061_1624610140964_4_200x200.JPG/dims/resize/Q_80,0"
+            class="musician-photo"
+          />
+          <h2 class="title">Tyler, The Creator</h2>
+          <span class="subtitle">Rap, Hip-Hop</span>
+        </div>
+        <div class="playlist-option">
+          <button class="playlist-option__shuffle playlist-option__btn">
+            Shuffle
+          </button>
+          <button class="playlist-option__like playlist-option__btn">
+            <i class="fa-solid fa-heart"></i> 212 971
+          </button>
+        </div>
+        <div class="playlist">
+          <div class="playlist-music">
+            <img
+              src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/208/519/81208519_1562565645211_1_600x600.JPG/dims/resize/Q_80,0"
+              class="playlist-music__album"
+            />
+
+            <div class="playlist-music__music-info">
+              <span class="playlist-music__music-info__musician">
+                Tyler, the Creator
+              </span>
+              <span class="playlist-music__music-info__music-name"
+                >EARFQUAKE</span
+              >
+            </div>
+            <div class="playlist-music__more-info">
+              <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            </div>
+          </div>
+
+          <div class="playlist-music playlist-playnow">
+            <img
+              src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/961/990/80961990_1500603689942_1_600x600.JPG/dims/resize/Q_80,0"
+              class="playlist-music__album"
+            />
+
+            <div class="playlist-music__music-info">
+              <span class="playlist-music__music-info__musician">
+                Tyler, the Creator
+              </span>
+              <span class="playlist-music__music-info__music-name"
+                >November</span
+              >
+            </div>
+            <div class="playlist-music__more-info">
+              <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            </div>
+          </div>
+
+          <div class="playlist-music">
+            <img
+              src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/961/990/80961990_1500603689942_1_600x600.JPG/dims/resize/Q_80,0"
+              class="playlist-music__album"
+            />
+
+            <div class="playlist-music__music-info">
+              <span class="playlist-music__music-info__musician">
+                Tyler, the Creator
+              </span>
+              <span class="playlist-music__music-info__music-name">911</span>
+            </div>
+            <div class="playlist-music__more-info">
+              <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            </div>
+          </div>
+
+          <div class="playlist-music">
+            <img
+              src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/347/664/80347664_1650867328453_1_600x600.JPG/dims/resize/Q_80,0"
+              class="playlist-music__album"
+            />
+
+            <div class="playlist-music__music-info">
+              <span class="playlist-music__music-info__musician">
+                Tyler, the Creator
+              </span>
+              <span class="playlist-music__music-info__music-name">WOLF</span>
+            </div>
+            <div class="playlist-music__more-info">
+              <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="playlist-playbar">
+          <div class="playlist-music__music-info">
+            <span class="playlist-music__music-info__musician">
+              Tyler, the Creator
+            </span>
+            <span class="playlist-music__music-info__music-name">November</span>
+          </div>
+          <div class="playlist-playbar__icon">
+            <i class="fa-solid fa-backward-step fa-sm"></i>
+            <i class="fa-solid fa-pause fa-xl"></i>
+            <i class="fa-solid fa-forward-step fa-sm"></i>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="main-screen right-side">
+      <header class="top-menu">
+        <div class="top-menu-left">
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div class="top-menu-right">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </header>
+
+      <main class="player">
+        <img
+          class="player__album-cover"
+          src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/961/990/80961990_1500603689942_1_600x600.JPG/dims/resize/Q_80,0"
+        />
+        <div class="player__music-info">
+          <h2 class="title">November</h2>
+          <span class="subtitle">Tyler, The Creator</span>
+        </div>
+        <div class="player__play-bar">
+          <div class="player__play-bar__player-number">1:56</div>
+          <div class="player__play-bar__player-number">2:21</div>
+        </div>
+        <div class="player__play-bar__icon">
+          <input
+            type="range"
+            id="volume"
+            name="volume"
+            min="0"
+            max="10"
+            value="7"
+            step="0.01"
+          />
+        </div>
+
+        <div class="player__play-icon">
+          <i class="fa-solid fa-repeat"></i>
+          <i class="fa-solid fa-backward-step fa-lg"></i>
+          <i class="fa-solid fa-circle-play fa-2xl"></i>
+          <i class="fa-solid fa-forward-step fa-lg"></i>
+          <i class="fa-solid fa-shuffle"></i>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/493cc16663.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

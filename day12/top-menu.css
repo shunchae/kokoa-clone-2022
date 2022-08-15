@@ -1,0 +1,18 @@
+.top-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 20px;
+  padding-bottom: 0px;
+}
+
+.top-menu-left {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+.top-menu-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}

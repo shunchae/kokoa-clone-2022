@@ -1,0 +1,28 @@
+.musician-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.musician-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 20px 0px;
+  box-shadow: 0px 10px 15px lightblue;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 5px 0px;
+}
+.subtitle {
+  display: block;
+  text-align: center;
+  margin: 5px 0px;
+  font-size: 14px;
+  color: rgb(126, 126, 126);
+}
